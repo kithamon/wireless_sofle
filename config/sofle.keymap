@@ -34,7 +34,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "default";
+            display-name = "Base";
 // ------------------------------------------------------------------------------------------------------------
 // |    `    |    1    |    2    |    3    |    4    |    5    |                    |    6    |    7    |    8    |    9    |    0    |  BKSPC  |
 // |   ESC   |    Q    |    W    |    E    |    R    |    T    |                    |    Y    |    U    |    I    |    O    |    P    |    -    |
@@ -42,8 +42,8 @@
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |  MUTE  |   |  PLAY |    N    |    M    |    ,    |    .    |    /    |  SHIFT  |
 //                     |   CTRL  |   ALT   |   GUI   |  LOWER  |  ENTER |   | SPACE |  RAISE  |   GUI   |   ALT   |   CTRL  |
             bindings = <
-&mt ESC TILDE  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5                         &kp N6   &kp N7    &kp N8    &kp N9    &kp N0   &kp BSPC
-&kp TAB        &kp Q     &kp W     &kp E     &kp R      &kp T                          &kp Y     &kp U    &kp I     &kp O     &kp P    &kp MINUS
+&kp ESC  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5                         &kp N6   &kp N7    &kp N8    &kp N9    &kp N0   &kp MINUS
+&kp TAB        &kp Q     &kp W     &kp E     &kp R      &kp T                          &kp Y     &kp U    &kp I     &kp O     &kp P    &kp BSPC
 &kp GRAVE      &kp A     &kp S     &kp D     &kp F      &kp G                          &kp H     &kp J    &kp K     &kp L     &kp SEMI &kp SQT
 &mt LSHFT CAPS &kp Z     &kp X     &kp C     &kp V      &kp B   &kp C_MUTE   &kp C_PP  &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH &mt RSHFT RET
                          &kp LCTRL &kp LALT  &kp LGUI   &kp RET &mo LOWER   &mo RAISE &kp SPACE &kp RGUI &kp RALT  &kp RCTRL
@@ -53,7 +53,7 @@
         };
 
         lower_layer {
-            display-name = "lower";
+            display-name = "Lower";
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |    ~    |    F1   |    F2   |    F3   |    F4   |    F5   |                   |    F6    |    F7    |    F8    |    F9    |    F10   |    F11   |
@@ -73,7 +73,7 @@
         };
 
         raise_layer {
-            display-name = "raise";
+            display-name = "Raise";
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |  DEL  |
 // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
@@ -92,7 +92,7 @@
         };
 
         adjust_layer {
-            display-name = "adjust";
+            display-name = "Adjust";
 // ----------------------------------------------------------------------------------------------------------------------------
 // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
 // | EXTPWR |         |         |         |         |         |                  |      |      |       |      |       |       |
