@@ -104,14 +104,14 @@
         adjust_layer {
             display-name = "Adjust";
 // ----------------------------------------------------------------------------------------------------------------------------
-// | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |BT CLR ALL|
-// | EXTPWR |         |         |         |         |         |                  |      |      |       |      |       |       |
-// |        |         |         |         |         |         |                  |      |      |       |      |       |       |
-// |        |         |         |         |         |         |         | |      |      |      |       |      |       |       |
-//                    |         |         |         |         |         | |      |      |      |       |      |
+// | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |             |       |      |       |BT CLR ALL|
+// | EXTPWR |         |         |         |         |         |                  |      |Studio Unlock|       |      |       |       |
+// |        |         |         |         |         |         |                  |      |             |       |      |       |       |
+// |        |         |         |         |         |         |         | |      |      |             |       |      |       |       |
+//                    |         |         |         |         |         | |      |      |             |       |      |
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                   &none &none &none &none &none &bt BT_CLR_ALL
-&soft_off         &none     &none           &none           &none           &none                       &none &none &none &none &none &none
+&soft_off         &none     &none           &none           &none           &none                       &none &studio_unlock &none &none &none &none
 &none             &none     &none           &none           &none           &none                       &none &none &none &none &none &none
 &none             &none     &none           &none           &none           &none     &none      &none  &none &none &none &none &none &none
                             &none           &none           &none           &none     &none      &none  &none &none &none &none
